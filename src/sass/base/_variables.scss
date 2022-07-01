@@ -1,3 +1,10 @@
+$breakpoints: (
+	small: 36em,
+	// 36em = 576px
+	large: 62em,
+	// 62em = 992px
+);
+
 $themes: (
 	light: (
 		bg-body: hsl(0, 0%, 100%),

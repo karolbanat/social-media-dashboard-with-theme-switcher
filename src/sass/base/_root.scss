@@ -1,4 +1,4 @@
-@use 'themes' as themes;
+@use './variables';
 
 :root {
 	// colors
@@ -13,7 +13,7 @@
 	--clr-white: hsl(0, 0%, 100%);
 
 	// generating themes
-	@each $theme, $components in themes.$themes {
+	@each $theme, $components in variables.$themes {
 		@each $component, $color in $components {
 			--clr-#{$component}-#{$theme}: #{$color};
 		}
