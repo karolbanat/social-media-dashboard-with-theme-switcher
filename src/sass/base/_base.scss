@@ -11,6 +11,7 @@ body {
 	--clr-divider: var(--clr-divider-light);
 
 	font-family: var(--ff);
+	font-weight: var(--fw-400);
 	color: var(--clr-text);
 	background-color: var(--bg-body);
 
@@ -51,5 +52,4 @@ span {
 
 p {
 	font-size: var(--fz-regular);
-	font-weight: var(--fw-400);
 }
