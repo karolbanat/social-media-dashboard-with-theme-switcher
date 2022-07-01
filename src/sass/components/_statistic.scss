@@ -2,7 +2,6 @@
 	position: relative;
 	font-size: var(--fz-small);
 	font-weight: var(--fw-700);
-	vertical-align: middle;
 
 	&::before {
 		content: var(--content, '');
