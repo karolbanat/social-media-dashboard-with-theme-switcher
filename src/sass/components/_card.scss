@@ -18,6 +18,7 @@
 	&:hover,
 	&:focus {
 		--bg-card: var(--bg-card-hover);
+		outline: none;
 	}
 
 	&__name {
