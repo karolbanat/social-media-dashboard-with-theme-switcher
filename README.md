@@ -8,8 +8,8 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/social-media-dashboard-with-theme-switcher-Ems_gxHMhM)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/social-media-dashboard-with-theme-switcher/)
 
 ## Author
 
