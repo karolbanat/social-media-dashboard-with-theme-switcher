@@ -8,7 +8,7 @@ body {
 	color: var(--clr-text);
 	background-color: var(--bg-body);
 
-	&.theme-dark {
+	&[data-theme='dark'] {
 		@include mixins.stage(dark);
 	}
 
