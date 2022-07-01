@@ -1,0 +1,55 @@
+@use '../base/mixins';
+
+.theme-toggle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.6rem;
+
+	@include mixins.mq(small) {
+		gap: 1.2rem;
+		margin-top: 0;
+	}
+
+	&__btn {
+		--width: 4.8rem;
+		--circle-left: 0.3rem;
+
+		position: relative;
+		width: var(--width);
+		aspect-ratio: 2/ 1;
+
+		background: var(--clr-toggle);
+		border: none;
+		border-radius: 100vmax;
+
+		cursor: pointer;
+
+		&::before {
+			--width: 1.8rem;
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: calc(100% - var(--width) - var(--circle-left));
+
+			width: var(--width);
+			aspect-ratio: 1;
+
+			background-color: var(--clr-white);
+			border-radius: 100vmax;
+			transition: left 0.5s ease-in-out;
+		}
+
+		&:hover,
+		&:focus {
+			background: var(--clr-toggle-hover);
+		}
+
+		&--dark {
+			&::before {
+				left: var(--circle-left);
+			}
+		}
+	}
+}

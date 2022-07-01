@@ -1,0 +1,31 @@
+@use '../base/mixins';
+
+.header {
+	padding-block: 3.6rem 4rem;
+
+	&__heading {
+		font-size: var(--fz-medium);
+
+		@include mixins.mq(small) {
+			--fz-medium: 2.8rem;
+		}
+	}
+
+	&__content {
+		padding-bottom: 2.2rem;
+		border-bottom: 1px solid var(--clr-divider);
+
+		@include mixins.mq(small) {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+
+	&__body {
+		@include mixins.mq(small) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
