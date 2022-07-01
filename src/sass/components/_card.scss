@@ -1,0 +1,58 @@
+.card {
+	--pd-inline: 2.4rem 3.2rem;
+	--pd-block: 2.8rem 1.6rem;
+
+	padding: {
+		inline: var(--pd-inline);
+		block: var(--pd-block);
+	}
+	width: 100%;
+
+	background-color: var(--bg-card);
+	border-radius: var(--borr-sm);
+
+	overflow: hidden;
+	cursor: pointer;
+	transition: background-color 0.4s ease-in-out;
+
+	&:hover,
+	&:focus {
+		--bg-card: var(--bg-card-hover);
+	}
+
+	&__name {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.8rem;
+
+		font-size: var(--fz-small);
+	}
+
+	&__stat {
+		font-size: var(--fz-large);
+
+		&--big {
+			--fz-large: 5.6rem;
+		}
+	}
+
+	&__stat-label {
+		font-size: var(--fz-small);
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+
+	&--vertical {
+		--gap: 2.4rem;
+		--pd-block: 3.4rem 2.4rem;
+		--pd-inline: 2.4rem;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: var(--gap);
+
+		text-align: center;
+	}
+}

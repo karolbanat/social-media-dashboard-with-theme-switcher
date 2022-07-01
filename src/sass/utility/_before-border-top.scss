@@ -1,0 +1,27 @@
+.before-border-top {
+	--background: var(--bg-card-hover);
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0 0 calc(100% - 0.4rem) 0;
+		background: var(--background);
+	}
+
+	&--facebook {
+		--background: var(--clr-facebook);
+	}
+
+	&--twitter {
+		--background: var(--clr-twitter);
+	}
+
+	&--instagram {
+		--background: var(--clr-instagram);
+	}
+
+	&--youtube {
+		--background: var(--clr-youtube);
+	}
+}
