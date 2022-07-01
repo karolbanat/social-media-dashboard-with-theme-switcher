@@ -1,0 +1,24 @@
+.statistic {
+	position: relative;
+	font-size: var(--fz-small);
+	font-weight: var(--fw-700);
+	vertical-align: middle;
+
+	&::before {
+		content: var(--content, '');
+		position: absolute;
+		top: 50%;
+		transform: translateY(-70%);
+		left: -1.2rem;
+	}
+
+	&--up {
+		--content: url('../images/icon-up.svg');
+		color: var(--clr-primary-700);
+	}
+
+	&--down {
+		--content: url('../images/icon-down.svg');
+		color: var(--clr-primary-600);
+	}
+}
