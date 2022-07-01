@@ -11,10 +11,6 @@ body {
 	&[data-theme='dark'] {
 		@include mixins.stage(dark);
 	}
-
-	@media (prefers-color-scheme: dark) {
-		@include mixins.stage(dark);
-	}
 }
 
 h1,
