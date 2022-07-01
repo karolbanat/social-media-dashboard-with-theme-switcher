@@ -1,0 +1,38 @@
+@use 'themes' as themes;
+
+:root {
+	// colors
+	--clr-primary-600: hsl(356, 69%, 56%);
+	--clr-primary-700: hsl(163, 72%, 41%);
+
+	--clr-facebook: hsl(208, 92%, 53%);
+	--clr-twitter: hsl(203, 89%, 53%);
+	--clr-instagram: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+	--clr-youtube: hsl(348, 97%, 39%);
+
+	--clr-white: hsl(0, 0%, 100%);
+
+	// generating themes
+	@each $theme, $components in themes.$themes {
+		@each $component, $color in $components {
+			--clr-#{$component}-#{$theme}: #{$color};
+		}
+	}
+
+	// font families
+	--ff: 'Inter', sans-serif;
+
+	// font weights
+	--fw-400: 400;
+	--fw-700: 700;
+
+	// font sizes
+	--fz-small: 1.2rem; // 1rem = 10px
+	--fz-regular: 1.4rem;
+	--fz-medium: 2.4rem;
+	--fz-large: 3.2rem;
+
+	// border radius
+	--borr-sm: 0.5rem;
+	--borr-md: 2rem;
+}
