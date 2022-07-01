@@ -7,3 +7,16 @@
 		@content;
 	}
 }
+
+@mixin stage($theme) {
+	--bg-body: var(--clr-bg-body-#{$theme});
+	--bg-pattern: var(--clr-bg-pattern-#{$theme});
+	--bg-card: var(--clr-bg-card-#{$theme});
+	--bg-card-hover: var(--clr-bg-card-hover-#{$theme});
+	--clr-text: var(--clr-text-#{$theme});
+	--clr-heading: var(--clr-heading-#{$theme});
+	--clr-section-heading: var(--clr-section-heading-#{$theme});
+	--clr-toggle: var(--clr-toggle-#{$theme});
+	--clr-toggle-hover: var(--clr-toggle-hover-#{$theme});
+	--clr-divider: var(--clr-divider-#{$theme});
+}
